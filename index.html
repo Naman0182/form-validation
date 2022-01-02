@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+  <div class="form-wrapper">
+  <form id="form">
+      <label for="fname">First name *</label>
+      <input type="text" placeholder="Enter Your First Name" name="fname" id="fname">
+      <div class="error"></div>
+
+      <label for="lname">Last name *</label>
+      <input type="text" placeholder="Enter Your Last Name" name="lname" id="lname">
+      <div class="error"></div>
+
+      <label for="email">Email address *</label>
+      <input type="email" placeholder="name@example.com" name="email" id="email">
+      <div class="error"></div>
+      
+      <label for="password">Password *</label>
+      <input type="password" placeholder="Please Enter Your Password" id="password" name="password">
+      <div class="error"></div>
+      
+      
+      <select id="select"  name="options">
+          <option hidden  value="">Please select option </option>
+          <option id = "option">Python</option>
+          <option id = "option">Web Development</option>
+          <option id = "option">Blockchain</option>
+          <option id = "option">Cloud Computing</option>
+      </select>
+      <div class="error"></div>
+
+      <label for="file">Please Upload Your Profile Photo</label>
+      <div class="files-container">   
+          <input type="file" name="file" accept="image/.jpg,.pang">
+      </div>
+      
+      <label for="messege">Message *</label>
+      <textarea name="messege" id="messege"></textarea>
+      <div class="error"></div>
+      
+      <input type="submit">
+  </form>
+</div>
+  </body>
+</html>
